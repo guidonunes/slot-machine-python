@@ -30,6 +30,7 @@ def get_number_of_lines():
             print("Please enter a valid number.")
     return lines
 
+# Handle's the user's input for the amount to bet on each line
 def get_bet_amount():
     while True:
         amount = input("What would you like to bet o each line? $")
@@ -48,10 +49,10 @@ def get_bet_amount():
 def main():
     balance = deposit()
     lines = get_number_of_lines()
-    bet = get_bet_amount()
-    total_bet = bet * lines
+    while True:
+        bet = get_bet_amount()
+        total_bet = bet * lines
+
     print(f"You are betting ${bet} on {lines} lines. Total bet: ${total_bet}")
-
-
 
 main( )
