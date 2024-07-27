@@ -11,4 +11,8 @@ def deposit():
             print("Please enter a valid number.")
     return amount
 
-deposit()
+def main():
+    balance = deposit()
+
+
+main( )
