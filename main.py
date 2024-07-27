@@ -54,7 +54,7 @@ def main():
         total_bet = bet * lines
 
         if total_bet > balance:
-            print("You do not have enough funds to place this bet. Your balance is ${balance}.")
+            print(f"You do not have enough funds to place this bet, your current balance is: ${balance}")
         else:
             break
 
