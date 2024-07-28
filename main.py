@@ -8,11 +8,17 @@ ROWS = 3
 COLS = 3
 
 symbol_count = {
-    "A":2,
+    "A":5,
     "B":4,
-    "C":6,
-    "D":8
+    "C":3,
+    "D":2
 }
+
+def check_winnings(columns,lines, bet, values):
+    for line in range(lines):
+
+
+
 
 # Generates a random spin for the slot machine
 def get_slot_machine_spin(rows, cols, symbols):
