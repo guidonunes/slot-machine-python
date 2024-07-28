@@ -17,6 +17,7 @@ symbol_count = {
 # Check the winnings for the slot machine spin
 def check_winnings(columns,lines, bet, values):
     winnings = 0
+    winning_lines = []
     for line in range(lines):
         symbol = columns[0][line]
         for column in columns:
@@ -25,8 +26,9 @@ def check_winnings(columns,lines, bet, values):
                 break
         else:
             winnings += values[symbol] * bet
+            winning_lines.append(line + 1)
 
-    return winnings
+    return winnings, winning_lines
 
 
 # Generates a random spin for the slot machine
