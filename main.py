@@ -32,6 +32,8 @@ def get_slot_machine_spin(rows, cols, symbols):
 
         columns.append(column)
 
+    return columns
+
 # Handle's the user's deposit
 def deposit():
     while True:
