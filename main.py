@@ -122,7 +122,8 @@ def main():
 
     slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
     print_slot_machine_spin(slots)
-    winnings = check_winnings(slots, lines, bet, symbol_count)
+    winnings, winning_lines = check_winnings(slots, lines, bet, symbol_count)
     print(f"You won ${winnings}!")
+    print(f"You win on", *winning_lines)
 
 main( )
