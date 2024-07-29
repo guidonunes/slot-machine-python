@@ -105,7 +105,7 @@ def get_bet_amount():
     return amount
 
 # The main game loop
-def spin():
+def spin(balance):
     lines = get_number_of_lines()
     while True:
         bet = get_bet_amount()
