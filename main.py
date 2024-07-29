@@ -132,7 +132,7 @@ def main():
         print(f"Your current balance is: ${balance}")
         answer = input("Would you like to spin? (y/n) ")
         if answer.lower() == "y":
-            balance += spin()
+            balance += spin(balance)
         else:
             break
 
