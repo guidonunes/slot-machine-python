@@ -130,8 +130,8 @@ def main():
     balance = deposit()
     while True:
         print(f"Your current balance is: ${balance}")
-        spin = input("Would you like to spin? (y/n) ")
-        if spin.lower() == "y":
+        answer = input("Would you like to spin? (y/n) ")
+        if answer.lower() == "y":
             balance += spin()
         else:
             break
